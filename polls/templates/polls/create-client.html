@@ -1,0 +1,8 @@
+<h1>Creating client</h1>
+
+<form action="{% url 'polls:confirm_addition' %}" method="post">
+{% csrf_token %}
+    <input type="text" name="client_name" />
+    <label for="client_name">Client name</label><br />
+<input type="submit" value="Submit" />
+</form>
